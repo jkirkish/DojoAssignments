@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>Registration</title>
+    </head>
+    <body>
+         <h1>My Registration Form</h1>
+         <form>
+               <table>
+                  <tr>
+                    <td><label for="first_name">First Name  </label></td>
+                    <td><input type="text" id="first_name" name="first_name"><br><br></td>
+                  </tr>
+                  <tr>
+                     <td><label for="last_name">Last Name  </label></td>
+                     <td><input type="text" id="last_name" name="last_name"><br><br></td>
+                  </tr>
+                  <tr>
+                     <td><label id="email">Email</label></td>
+                     <td><input type="text" name="email"><br><br></td>
+                   </tr>
+                   <tr>
+                     <td><label id="password">Password  </label></td>
+                     <td><input type="password" name="password"><br><br></td>
+                   </tr>
+                   <tr>
+                     <td><label for="PW">PW Confirm  </label></td>
+                     <td><input type="text" id="PW" name="PW"><br><br></td>
+                   </tr>
+                   <tr>
+                      <td><label for="bday">Birthday  </label></td>
+                      <td><input type="date" id= "bday" name="bday"><br><br></td>
+                   </tr>
+                 </table>
+              <table>
+                   <tr>
+                      <td><input type="radio" id="Male" name="gender" value="male"></td>
+                      <td><label for="Male">Male</label></td>
+                      <td><input type="radio" id ="Female" name="gender" value="Female"></td>
+                      <td><label for="Female">Female</label></td>
+                      <td><input type="radio"  id="other" name="gender" value="other"></td>
+                      <td><label for="other">Other</label></td>
+                   </tr>
+              </table>
+             <p>A short description about yourself:</p>
+             <textarea name="description"></textarea><br><br>
+             <label id="FavoriteLanguage">Favorite Language</label>
+                <select name="FavoriteLanguage">
+                     <option value="JavaScript">JavaScript</option>
+                     <option value="HTML">HTML</option>
+                     <option value="CSS">CSS</option>
+                     <option value="Python">Python</option>
+                </select><br><br>
+              <input type="submit" value="Submit">
+       </form>
+    </body>
+</html>
