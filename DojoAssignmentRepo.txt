@@ -1,0 +1,16 @@
+-I went onto github to create a repository in my profile called DojoAssignments
+
+-I clicked on git and cd directory to DojoAssignments on my desktop computer
+
+-I did git init to start a git repository in my DojoAssignments directory
+
+-I did a git add, git commit and got the remote website link from my online github account to
+ push the changes from git(command line) to github(web base user interface
+
+- I went to webbased github to make a readme.md file.  I did a google tutorial on how to format with different sections. I got the basic idea. 
+I made the readMe file in github itself. I learned that it is much easier that way.   
+
+-I opened a new file in notpad and named it DojoAssignmentRepo to describe what I did.  
+
+-I did 'git status' in the terminal and saw the changes made
+
