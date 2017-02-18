@@ -1,0 +1,107 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: san-serif;
+   color: rgb(255,255,255);
+   border: 1px dotted green;
+}
+.container {
+
+    width: 970px;
+    margin: 0 auto;
+    background: rgb(36,80,118);
+}
+.header{
+    padding: 10px;
+}
+.header  img {
+    width: 350px;
+}
+.header div {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 300px;
+}
+.header div p{
+    text-align: right;
+    font-size: 12px;
+    padding-right: 40px;
+}
+ .header div p span{
+
+     color: rgb(0,0,0);
+ }
+.nav{
+    margin-left: 70px;
+    margin-right: 40px;
+    background: rgb(67,124,173);
+    border-radius: 5px;
+}
+ .nav li {
+    margin-left: 25px;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+ }
+ .nav li a {
+
+     text-decoration: none;
+ }
+form {
+    padding: 10px 20px;
+    background: rgb(68,68,68);
+    border-radius: 5px;
+    box-shadow: rgb(0,0,0) 4px 4px;
+}
+form input[type="text"]{
+
+      text-align: center;
+      padding: 5px;
+}form input[type="submit"]{
+      padding: 5px;
+      background: rgb(36,80,118);
+      border-radius: 5px;
+      border: 2px solid grey
+      box-shadow: rgb(0,0,0); 2px 2px;
+}
+.main-top{
+    margin-left:70px;
+    padding: 20px;
+}
+.main-top ul{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.main top ul li {
+    list-style-type: none;
+}
+.main-top ul li::before{
+    content: '\00BB \20';
+    color: gold;
+}
+.main-top div {
+    display: inline-block;
+    width: 600px;
+    vertical-align: top;
+}
+.main-top div p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.main-top div p:first-child{
+
+     font-size:12px;
+}
+.gold{
+ color:gold;
+}
+.large-text{
+    font-size: 20px;
+}
+.italic{
+    font-style: italic;
+}
