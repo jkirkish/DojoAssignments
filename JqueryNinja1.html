@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Disappearing Ninja</title>
+        <link rel="stylesheet" href="style1.css">
+        <script type="text/javascript"src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'>
+         </script>
+         <script type="text/javascript"></script>
+         <script>
+         $(document).ready(function(){
+             $("img").click(function(){
+                $(this).hide();
+             });
+
+             $("#btn1").click(function(){
+                 $("img").show();
+             });
+         });
+         </script>
+    </head>
+    <body>
+        <h1>JQuery-assignment 1</h1>
+
+
+                 <img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;">
+                <img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;">
+                <img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;">
+                <img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;">
+
+
+                <img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;">
+                <img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;">
+                <img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;">
+                <img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;">
+
+
+        <button id="btn1">Restore</button>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>JQUERY PRACTICE</title>
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+        $("a").click(function(){
+            alert('JQUERY IS GREAT PRACTICE!');
+        });
+        $("#hide").click(function(){
+            $("h2").hide();
+        });
+        $("#Show").click(function(){
+            $("h2").show();
+        });
+        $("p").toggle(
+        function(){$("p").show();
+        });
+        $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+       });
+       $("#flip").click(function(){
+        $("#panel").slideUp("fast");
+       });
+       $("#flip").click(function(){
+       $("#panel").slideToggle("slow");
+        });
+        $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+        });
+        $("#b1").click(function(){
+        $("#div4").fadeOut();
+        $("#div5").fadeOut("slow");
+        $("#div6").fadeOut(3000);
+        });
+        $("#b2").click(function(){
+        $("p:first").addClass("intro");
+        });
+        $(".before").click(function(){
+        $("p").before("<p>Hello world!</p>");
+        });
+        $("#after1").click(function(){
+        $("h3").after("<p>After is later!</p>");
+        });
+        $("#btn1").click(function(){
+            $("p").append(" <b>Appended text</b>.");
+        });
+            $("#btn2").click(function(){
+        $("ol").append("<li>Appended item</li>");
+        });
+        $("#btn3").click(function(){
+        $("p").html("I am King of the<b>world!</b>");
+    });
+        $("#btn5").click(function(){
+        $("img").attr("width", "500");
+    });
+        $("#btn6").click(function(){
+        $("input:text").val("Stop pushing my buttons");
+    });
+        $("#btn7").click(function(){
+        $("p").text("Detonation Halted!");
+    });
+        $("#btn8").click(function(){
+        $("div").data("greeting", "Hello World");
+    });
+        $("#btn9").click(function(){
+        alert($("div").data("greeting"));
+    });
+});
+    </script>
+    <style>
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</script>
+<style>
+.intro {
+    font-size: 150%;
+    color: red;
+}
+</style>
+</head>
+<body>
+
+    <h1>JQUERY PRACTICE</h1>
+    <a href="https://www.google.com/">Search Me</a>
+
+    <h2>"Hide you don't see me. Show means I am visible."</h2>
+    <button id = "hide">Hide</button>
+    <button id = "Show">Show</button>
+
+    <p style="font-size: 40px">Touch Me and I change color.</p>
+
+
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">My super Panel!</div>
+
+    <button>Click to fade in boxes</button><br><br>
+
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+    <button id="b1">Click to fade out boxes</button><br><br>
+
+    <div id="div4" style="width:80px;height:80px;background-color:red;"></div><br>
+    <div id="div5" style="width:80px;height:80px;background-color:green;"></div><br>
+    <div id="div6" style="width:80px;height:80px;background-color:blue;"></div>
+
+    <h1>Add a class name to the first p element</h1>
+
+    <button id="b2">Add a class name to the first p element</button>
+
+    <div class="before">
+    <br>
+    <button id="before1">Insert content before each p element</button>
+
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+    </div>
+
+    <h3>This is a paragraph.</h3>
+    <h3>This is a paragraph.</h3>
+    <button id="after1">Insert content before each p element</button>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+
+    <button id="btn1">Append text</button>
+    <button id="btn2">Append list item</button>
+    <br>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <button id="btn3">Change content of all p elements</button>
+    <br>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Punaluu_Beach_Park,_Big_Island,_Hawaii.jpg/220px-Punaluu_Beach_Park,_Big_Island,_Hawaii.jpg" alt="Pulpit Rock" width="284" height="213"><br>
+
+    <button id="btn5">Set the width attribute of the image</button>
+
+    <p>Name: <input type="text" name="user"></p>
+    <button id="btn6">Set the value of the input field</button>
+
+    <br>
+    <br>
+    <button id="btn7">Set text content for all p elements</button>
+     <p>This is a paragraph.</p>
+     <p>This is another paragraph.</p>
+     <br>
+     <br>
+     <button id="btn8">Attach data to div element</button><br><br>
+     <button id="btn9">Get data attached to div element</button>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Disappearing Ninja</title>
+        <link rel="stylesheet" href="style1.css">
+        <script type="text/javascript"src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'>
+         </script>
+         <script type="text/javascript"></script>
+         <script>
+         $(document).ready(function(){
+             $('li').click(function(){
+                $(this).hide();
+             });
+             /*$("#first").click(function(){
+                 $("#first").hide();
+             });
+             $("#second").click(function(){
+                 $("#second").hide();
+             });
+             $("#third").click(function(){
+                 $("#third").hide();
+             });$("#forth").click(function(){
+                 $("#forth").hide();
+             });
+             $("#fifth").click(function(){
+                 $("#fifth").hide();
+             });$("#six").click(function(){
+                 $("#six").hide();
+             });$("#seven").click(function(){
+                 $("#seven").hide();
+             });$("#eight").click(function(){
+                 $("#eight").hide();
+             });*/
+             $("#btn1").click(function(){
+                 $("li").show();
+             });
+         });
+         </script>
+    </head>
+    <body>
+        <h1>JQuery-assignment 1</h1>
+        <div class="row1">
+            <ul>
+                <li id="first"><img  src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;"></li>
+                <li id="second"><img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;"></li>
+                <li id="third"><img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;"></li>
+                <li id="forth"><img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;"></li>
+            <ul>
+        </div>
+        <div class="row2">
+            <ul>
+                <li id="fifth"><img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;"></li>
+                <li id="six"><img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;"></li>
+                <li id="seven"><img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;"></li>
+                <li id="eight"><img src="http://vintageninja.net/wp-content/uploads/NinjaDragonsDen8.jpg"alt ="Ninja" style="width:150px; height:150px;"></li>
+            <ul>
+        </div>
+        <button id="btn1">Restore</button>
+    </body>
+</html>
