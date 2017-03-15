@@ -11,19 +11,15 @@ def coinToss():
     attempt = {}
     for count in range(0,5001):
         random_num = random.random()
-        '''attempt["#"] = count'''
         if random_num > 0.5:
             x = round(random.random())
             head = head + 1
-            attempt["heads"] = head
-            print ("Attempt #" + str(count)+": "+"Throwing a coin... "+"It's a head!",)
+            print "Attempt #" + str(count) +": "+"Throwing a coin... "+"It's a head!...","Got", head, "head(s) so far and", tail,"tails(s) so far"
         elif random_num < 0.5:
             y = round(random.random())
             tail = tail + 1
-            attempt["tails"]=tail
-            print ("Attempt #" + str(count)+": "+"Throwing a coin... "+"It's a tail!",)
-
-
+            print "Attempt #" + str(count) +": "+"Throwing a coin... "+"It's a tail!...","Got", head, "head(s) so far and", tail,"tails(s) so far"
+    print "Ending the program, thank you!"
 
 
 
