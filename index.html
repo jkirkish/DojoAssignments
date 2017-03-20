@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='../css/my_style_sheet.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js') }}"></script>
+    <title>Greeting!</title>
+  </head>
+  <body>
+    <h1>GREETINGS!</h1><br>
+    <p>My name is {{name}}</p>
+    <img src="{{ url_for('static', filename='./img/Greetings.png') }}">
+    <p>How are you all doing?</p>
+  </body>
+</html>
