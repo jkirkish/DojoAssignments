@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dojo Survey</title>
+    <style type="text/css">
+    .container {
+        width: 500px;
+        clear: both;
+        margin: 250px;
+        padding: 200px;
+        border-style: solid
+    }
+    .container input {
+        width: 25%;
+
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+          <form action='/profile.html' method='post'>
+        <td>Your Name: <input type = 'text' name='name'></td>
+          </form>
+        <form>
+          <label>Dojo Location: </label></td>
+            <input list = 'locations' name='location'>
+             <datalist id = "locations">
+               <option value = "1">Seattle</option>
+               <option value = "2">San Francisco</option>
+               <option value = "3">Chicago</option>
+               <option value = "4">Dallas</option>
+               <option value = "4">Washington D.C.</option>
+             </datalist>
+           </form>
+           <form action='/profile.html' method='post'>
+             <label>Favorite Language: </label>
+              <input list="language" name="language">
+              <datalist id = "language">
+               <option value = "1">French</option>
+               <option value = "2">Spanish</option>
+               <option value = "3">English</option>
+               <option value = "4">German</option>
+               <option value = "4">Chinese</option>
+               <option value = "4">Klingon</option>
+               <option value = "4">Vulcan</option>
+               <input type = 'text' name='language'>
+             </datalist>
+           </form>
+          <br>
+          <form action='/profile.html' method='post' input ='text' name = 'comment'>
+          <p><label>Comments (Optional): </label></p>
+          <textarea rows="10" cols="50">
+          </textarea><br>
+          <input type = "submit" value="Submit" >
+        </form>
+      </table>
+    </div>
+  </body>
+</html>
